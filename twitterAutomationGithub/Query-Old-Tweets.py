@@ -23,6 +23,6 @@ with open('listOfIDs.txt', 'r') as text_file:
     for tweetIDs in myData:
         try:
             
-            print(api.destroy_status(tweetIDs).id)
+            print(api.get_status(tweetIDs).id)
         except:
             print('didnt exist')
