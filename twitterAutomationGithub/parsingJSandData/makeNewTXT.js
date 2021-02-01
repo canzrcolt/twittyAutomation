@@ -12,7 +12,8 @@ fs.readFile("./tweet.js", "utf-8", (err, jsonString) => {
       val.tweet.id < 1217132453917147136 &&
       val.tweet.id != 700808989886382080
     ) {
-      const listOfIDs = val.tweet.id + " " + val.tweet.created_at + ", ";
+      const listOfIDs = val.tweet.id + ", ";
+      console.log(typeof listOfIDs);
 
       try {
         fs.appendFile("yes.txt", listOfIDs, (err) => {

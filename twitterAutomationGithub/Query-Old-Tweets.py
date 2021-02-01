@@ -25,4 +25,4 @@ with open('listOfIDs.txt', 'r') as text_file:
             
             print(api.get_status(tweetIDs).id)
         except:
-            print('didnt exist')
+            print('already deleted')
